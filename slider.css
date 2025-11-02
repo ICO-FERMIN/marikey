@@ -1,0 +1,45 @@
+/* Estilos Base para asegurar el ancho completo */
+.slider-contenedor {
+    width: 100%;
+    /* Altura moderada: puedes ajustar '250px' a tu gusto */
+    height: 500px; 
+    overflow: hidden; /* Oculta las imágenes que no están a la vista */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* El 'track' que contiene todas las imágenes (10 imágenes = 1000% de ancho total) */
+.slider-track {
+    display: flex;
+    width: 1000%; /* 10 imágenes * 100% de ancho cada una */
+    height: 100%;
+    /* Inicia la animación de desplazamiento */
+    animation: desplazamiento 30s linear infinite;
+}
+
+/* Cada imagen individual dentro del slider */
+.slide {
+    width: 10%; /* Cada imagen ocupa 1/10 del ancho total del track */
+    height: 100%;
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+    background-position: center; /* Centra la imagen */
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+/* Animación de Desplazamiento */
+@keyframes desplazamiento {
+    0% {
+        /* Comienza en la posición 0 (primera imagen) */
+        transform: translateX(0);
+    }
+    100% {
+        /* Se desplaza el 50% del track (5 imágenes) para volver 
+           al inicio sin el "salto" visible */
+        transform: translateX(-50%); 
+    }
+}
+
+/* Opcional: Pausar la animación al pasar el ratón */
+.slider-contenedor:hover .slider-track {
+    animation-play-state: paused;
+}

@@ -1,0 +1,83 @@
+
+/* Contenedor Principal (Flexbox) */
+.contenedor-principal {
+    display: flex;
+    width: 90%; 
+    background-color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+/* Lado Izquierdo (Imagen) */
+.lado-izquierdo {
+    flex: 1; 
+    min-width: 300px;
+    background-color: #eee;
+}
+
+.lado-izquierdo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Lado Derecho (Contenido) */
+.lado-derecho {
+    flex: 1; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lado-derecho h2 {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-size: 2em;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.lado-derecho p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Ejemplo de Botón */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para Responsividad (Dispositivos Móviles) */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* Apila los elementos */
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .lado-izquierdo {
+        height: 250px; /* Altura fija para la imagen en móviles */
+        min-width: unset;
+    }
+
+    .lado-derecho {
+        padding: 25px;
+    }
+}

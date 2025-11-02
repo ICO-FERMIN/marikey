@@ -1,0 +1,67 @@
+/* Estilos generales (puedes omitir si ya tienes un archivo CSS base) */
+
+
+.seccion-carrusel {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-carrusel h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal de la cinta */
+.cinta-imagenes {
+    /* 1. Hace que los elementos hijos se alineen horizontalmente */
+    display: flex; 
+    
+    /* 2. Permite que el contenido se salga del ancho del contenedor */
+    width: 100%;
+    
+    /* 3. ¡La clave! Muestra la barra de desplazamiento horizontal si el contenido es demasiado ancho */
+    overflow-x: auto; 
+    
+    /* 4. Evita el salto de línea, forzando la horizontalidad */
+    white-space: nowrap; 
+    
+    /* Estilos estéticos opcionales */
+    padding-bottom: 10px; /* Espacio para la barra de desplazamiento */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para cada imagen */
+.cinta-imagenes img {
+    /* Mantiene las imágenes como bloques en línea */
+    display: inline-block; 
+    
+    /* Define el tamaño de cada imagen */
+    width: 300px; /* Ancho fijo para cada imagen */
+    height: 200px; /* Altura fija para cada imagen */
+    
+    /* Asegura que las imágenes no se deformen y cubran el espacio */
+    object-fit: cover; 
+    
+    /* Estilos estéticos opcionales */
+    border-radius: 6px;
+    flex-shrink: 0; /* IMPORTE: Evita que las imágenes se encojan para caber */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Opcional: Ocultar la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+.cinta-imagenes::-webkit-scrollbar {
+    height: 8px; /* Altura de la barra */
+}
+
+.cinta-imagenes::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.cinta-imagenes::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}

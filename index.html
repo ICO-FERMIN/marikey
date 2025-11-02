@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Degradado Rosa Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="cuadro.css">
+    <link rel="stylesheet" href="cinta.css">
+    <link rel="stylesheet" href="mosaico.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-rosa-degradado fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mi Marca</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo2">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ejemplo3">Contacto</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="slider-contenedor">
+    <div class="slider-track">
+        <div class="slide" style="background-image: url('imagen/1.svg');"></div>
+        <div class="slide" style="background-image: url('imagen/2.png');"></div>
+        <div class="slide" style="background-image: url('imagen/3.jpg');"></div>
+        <div class="slide" style="background-image: url('imagen/4.jpg');"></div>
+        <div class="slide" style="background-image: url('imagen/5.jpg');"></div>
+        
+        <div class="slide" style="background-image: url('imagen/1.svg');"></div>
+        <div class="slide" style="background-image: url('imagen/2.png');"></div>
+        <div class="slide" style="background-image: url('imagen/3.jpg');"></div>
+        <div class="slide" style="background-image: url('imagen/4.jpg');"></div>
+        <div class="slide" style="background-image: url('imagen/5.jpg');"></div>
+    </div>
+</div>
+<br>
+<section class="pancho">
+
+<div class="contenedor-principal" id="ejemplo">
+        <div class="lado-izquierdo">
+            <img src="imagen/fondo23.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="lado-derecho">
+            <h2>Misión</h2>
+            <p>
+                Este es el contenido de la derecha. Hemos separado los estilos en un archivo CSS independiente para 
+                una mejor organización y mantenimiento del código. La estructura sigue siendo flexible (flexbox) 
+                y responsiva.
+            </p>
+            <h2>Visión</h2>
+            <p>
+                La **separación de responsabilidades** (HTML para estructura, CSS para presentación) 
+                es una práctica recomendada en el desarrollo web.
+            </p>
+        </div>
+    </div>
+
+    <section class="seccion-carrusel" id="ejemplo2">
+        <h2>Galería Desplazable de Maquillaje</h2>
+        <div class="cinta-imagenes">
+            <img src="https://picsum.photos/id/1018/500/300" alt="Maquillaje vibrante 1">
+            <img src="https://picsum.photos/id/1025/500/300" alt="Maquillaje natural 2">
+            <img src="https://picsum.photos/id/1033/500/300" alt="Maquillaje de noche 3">
+            <img src="https://picsum.photos/id/1041/500/300" alt="Maquillaje artístico 4">
+            <img src="https://picsum.photos/id/1051/500/300" alt="Maquillaje de pasarela 5">
+            <img src="https://picsum.photos/id/1062/500/300" alt="Maquillaje ahumado 6">
+        </div>
+    </section>
+
+    <section class="seccion-mosaico" id="ejemplo3">
+        <h2>Mosaico de Inspiración (Efecto Zoom)</h2>
+        <div class="mosaico-galeria">
+            
+            <div class="item-mosaico">
+                <img src="https://picsum.photos/id/403/400/300" alt="Estilo moderno">
+            </div>
+
+            <div class="item-mosaico">
+                <img src="https://picsum.photos/id/405/400/300" alt="Color pastel">
+            </div>
+
+            <div class="item-mosaico">
+                <img src="https://picsum.photos/id/409/400/300" alt="Textura">
+            </div>
+
+            <div class="item-mosaico">
+                <img src="https://picsum.photos/id/415/400/300" alt="Luz cálida">
+            </div>
+
+            <div class="item-mosaico">
+                <img src="https://picsum.photos/id/417/400/300" alt="Minimalista">
+            </div>
+
+            <div class="item-mosaico">
+                <img src="https://picsum.photos/id/420/400/300" alt="Diseño geométrico">
+            </div>
+
+        </div>
+    </section>
+
+</section>
+</body>
+</html>

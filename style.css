@@ -1,0 +1,34 @@
+/* Colores de ejemplo: un rosa fuerte a un rosa más claro/lila */
+.navbar-rosa-degradado {
+    /* El degradado real */
+    background-image: linear-gradient(to right, #FF70A6, #FF9770); 
+    /* Colores sugeridos:
+       - #FF70A6: Un rosa brillante (cercano al magenta)
+       - #FF9770: Un rosa-naranja más suave (coral)
+       
+       ¡Puedes cambiar los códigos de color hexadecimales (#XXXXXX) por tus tonos de rosa preferidos!
+    */
+    
+    /* Asegúrate de que no haya un color de fondo plano que lo anule */
+    background-color: transparent !important;
+}
+
+/* Opcional: Ajustar el color de los enlaces si el fondo es oscuro, 
+   para asegurar la legibilidad. Ya usamos 'navbar-dark' en el HTML para texto blanco,
+   pero si necesitas un color diferente: */
+.navbar-rosa-degradado .navbar-brand,
+.navbar-rosa-degradado .navbar-nav .nav-link {
+    color: #FFFFFF; /* Blanco para el texto */
+}
+
+/* Opcional: Color al pasar el ratón (hover) */
+.navbar-rosa-degradado .navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Un blanco más suave al pasar el ratón */
+    background-color: rgba(255, 255, 255, 0.1); /* Ligero fondo transparente al pasar el ratón */
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de alternancia (toggler) en móviles */
+.navbar-rosa-degradado .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
